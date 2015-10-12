@@ -1,0 +1,144 @@
+/*
+* The main CSS file for the Patje Play website
+* @Author: Florian Van Damme <vandammeflorian@gmail.com>
+* @Version: v0.1
+*/
+
+/* Import the Mohave font used for the title */
+@font-face {
+    font-family: "Mohave";
+    src: url(../fonts/Mohave.otf) format("opentype");
+}
+
+/* Main styles */
+body{
+    background-color: #43353D;
+    font-family: 'Lato', sans-serif;
+}
+
+h1{
+    font-family: "Mohave", Verdana, Tahoma, sans-serif !important;
+    color: #D98B3A !important;
+    font-size: 7em !important;
+    text-align: center !important;
+    font-weight: 100 !important;
+    margin-bottom: 20px !important;
+    -webkit-user-select: none !important; /* Chrome/Safari */
+    -moz-user-select: none !important; /* Firefox */
+    -ms-user-select: none !important; /* IE10+ */
+    cursor: default !important;
+}
+
+/* Responsive queries */
+@media (max-width: 500px) {
+    .container{
+        width: 95%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 501px) {
+    .container{
+        width: 500px;
+        margin: 0 auto;
+    }
+}
+
+/* Form styles */
+.form{
+    width: 100%;
+}
+
+.form input[type="text"],
+.form input[type="password"],
+.form input[type="email"]{
+    width: 100%;
+    max-width: 100% !important;
+    border: 0 !important;
+    background-color: white !important;
+    height: 40px;
+    padding: 10px !important;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+.form input[type="text"]:focus,
+.form input[type="password"]:focus,
+.form input[type="email"]:focus{
+    outline-color: #D98B3A;
+}
+
+.form input[type="text"]::-webkit-input-placeholder,
+.form input[type="password"]::-webkit-input-placeholder,
+.form input[type="email"]::-webkit-input-placeholder,
+.form input[type="text"]:-moz-placeholder,
+.form input[type="password"]:-moz-placeholder,
+.form input[type="email"]:-moz-placeholder,
+.form input[type="text"]::-moz-placeholder,
+.form input[type="password"]::-moz-placeholder,
+.form input[type="email"]::-moz-placeholder,
+.form input[type="text"]:-ms-input-placeholder,
+.form input[type="password"]:-ms-input-placeholder,
+.form input[type="email"]:-ms-input-placeholder{
+    font-size: 1.1em;
+    font-family: 'Lato', sans-serif;
+}
+
+.form-label{
+    font-family: 'Lato', sans-serif;
+    color: #D6523C;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.form-wrapper{
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.button{
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    margin-top: 15px;
+    border: 0;
+}
+
+.button:focus{
+    outline: #81253c solid 1px;
+}
+
+.main-button{
+    color: white;
+    font-family: "Mohave", Verdana, Tahoma, sans-serif;
+    font-size: 2em;
+    background-color: #BB3658;
+}
+
+.hidden{
+    display: none !important;
+}
+
+/* Bottom disclaimer styles */
+.disclaimer{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.disclaimer p{
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+.disclaimer a{
+    text-decoration: none;
+    color: #BB3658;
+}
+
+.disclaimer a:hover{
+    border-bottom: 1px solid #BB3658;
+}
+
